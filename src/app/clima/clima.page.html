@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="weather-card">
+    <ion-card-header>
+      <ion-card-title>
+        Weather
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="weather-icon">
+        <i class="fas {{ weatherIcon }}"></i>
+      </div>
+      <div class="weather-details">
+        <p><i class="fas fa-thermometer-half"></i> Temperatura: <strong>{{ temperature }} °C</strong></p>
+        <p><i class="fas fa-wind"></i> Viento: <strong> {{ wind }} km/h</strong></p>
+        <p><i class="fas fa-tint"></i> Humedad: <strong>{{ humidity }} %</strong></p>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
